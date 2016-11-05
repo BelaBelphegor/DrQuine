@@ -1,0 +1,9 @@
+import os
+i = 5
+s = "import os{:s}i = {:d}{:s}s = {:s}f = open(({:s}Sully_{:s} + str(i) + {:s}.py{:s}), 'w'){:s}f.write(s.format(chr(10), i - 1, chr(10), chr(34) + s + chr(34) + chr(10), chr(34), chr(34), chr(34), chr(34), chr(10), chr(10), chr(10), chr(10), chr(10) + chr(9), chr(10))){:s}f.flush(){:s}f.close(){:s}if i > 0:{:s}os.system('python Sully_' + str(i) + '.py'){:s}"
+f = open(("Sully_" + str(i) + ".py"), 'w')
+f.write(s.format(chr(10), i - 1, chr(10), chr(34) + s + chr(34) + chr(10), chr(34), chr(34), chr(34), chr(34), chr(10), chr(10), chr(10), chr(10), chr(10) + chr(9), chr(10)))
+f.flush()
+f.close()
+if i > 0:
+	os.system('python Sully_' + str(i) + '.py')
